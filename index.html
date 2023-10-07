@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Fernanda Maia</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/Portifolio2/assets/letra-f.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Portifolio2/style.css">
+  <!-- Swuiper CSS -->
+<link rel="stylesheet" href="/Portifolio2/assets/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css"> 
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- script js-->
+  <script src="/Portifolio2/script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Secao Header -->
+    <section id="header">
+      <div class="header-top">
+        <div class="logo">
+          <a href="#"><span>FM </span>Portifólio</a>
+          
+        </div>
+        <div class="nav-menu">
+          <ul class="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="bottom-left">
+          <h1 class="name">Fernanda <span>Maia</span></h1>
+          <h3 class="profession">Front-End Developer Junior</h3>
+          <p class="short-desc">Desenvolvedora Júnior com experiência na área de TI, em busca de uma vaga como Desenvolvedora, afim de evoluir cada vez mais no Mundo da Programação.</p>
+          <a href="/Portifolio2/assets/Curriculo-Fernanda Maia.pdf" class="btn-cv" target="_blank" download>Download CV</a>
+        </div>
+        <div class="bottom-right">
+          <a href="https://www.instagram.com/nandatls/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/fernandalsmaia"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/nandatls"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- Secao Sobre Mim -->
+    <section id="about">
+      <div class="about-left">
+        <img src="/Portifolio2/assets/foto.jpg" alt="">
+      </div>
+      <div class="about-right">
+        <div class="section-title">
+          <h2 class="sub-title">Sobre Mim</h2>
+          <h3 class="title">Front-End Developer Junior</h3>
+        </div>
+        <p class="desc">
+          Sou uma pessoa muito focada e organizada. Apaixonada por Tecnologia, sempre em busca de novos conhecimentos. Amo viajar, tecnologia e animais. 
+        </p>
+        <div class="tab-titles">         
+          <p class="tab-links active-link" onclick="openTab('education')">Formação</p>
+          <p class="tab-links" onclick="openTab('cursos')">Cursos</p>
+        </div>
+        <div class="tab-contents " id="cursos">
+          <ul>
+            <li>
+              <span>Desenvolvimento FullStack</span> <br>OneBitCode
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents active-tab" id="education">
+          <ul>
+            <li>
+              <span>2002-2008</span><br>Sistemas de Informação - Estácio de Sá
+            </li>
+            <li>
+              <span>1999-2001</span> <br>Processamento de Dados - FAETEC
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--Secao Skills-->
+    <section id="skills"> 
+      <div class="section-title" >
+      <h2 class="sub-title">Tecnologias</h2>
+      <!-- <span class="title">Minhas Skills</span> -->
+      <div class="skills-container">
+        <div class="skills-content">
+          <!-- <h3 class="skills-title">Front-End Developer </h3> -->
+          <h3 class="skills-title">MINHAS SKILLS</h3>
+          <div class="skills-info">
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="/Portifolio2/assets/html-1.svg" alt="skills image">
+              </div>
+             <h3 class="skills-name">HTML</h3>
+             <!-- <span class="skills-subtitle">Intermediário</span> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="/Portifolio2/assets/css-3.svg" alt="skills image">
+              </div>
+             <h3 class="skills-name">CSS</h3>
+             <!-- <span class="skills-subtitle">Intermediário</span> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="/Portifolio2/assets/logo-javascript.svg" alt="skills image">
+              </div>
+             <h3 class="skills-name">JAVASCRIPT</h3>
+             <!-- <span class="skills-subtitle">Intermediário</span> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="/Portifolio2/assets/react-2.svg" alt="skills image">
+              </div>
+             <h3 class="skills-name">REACT NATIVE</h3>
+             <!-- <span class="skills-subtitle">Básico</span> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="/Portifolio2/assets/github.svg" alt="skills image">
+              </div>
+             <h3 class="skills-name">GITHUB</h3>
+             <!-- <span class="skills-subtitle">Básico</span> -->
+            </div> 
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="/Portifolio2/assets/git-icon.svg" alt="skills image">
+              </div>
+             <h3 class="skills-name">GIT</h3>
+             <!-- <span class="skills-subtitle">Intermediário</span> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="/Portifolio2/assets/firebase.svg" alt="skills image">
+              </div>
+             <h3 class="skills-name">FIREBASE</h3>
+             <!-- <span class="skills-subtitle">Básico</span> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-blob">
+                <img src="/Portifolio2/assets/sql.svg" alt="skills image">
+              </div>
+             <h3 class="skills-name">SQL DATABASE</h3>
+              <!-- <span class="skills-subtitle">Básico</span> -->
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Secao Portfolio -->
+    <section id="portfolio" >
+      <div class="section-title">
+        <h2 class="sub-title">Meus Projetos</h2>
+      </div>
+      <!-- início carrossel swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide project"> 
+          <img src="/Portifolio2/assets/calculadora.png" alt="project1">
+           <div class="layer">
+            <h2>Calculadora</h2>
+            <p>Calculadora desenvolvida em Html, Css e Javascript.</p>
+            <a href="https://github.com/nandatls/Calculadora"><i class="fa fa-external-link"></i></a>
+          </div> 
+        </div>
+       <!-- slide2 -->
+        <div class="swiper-slide project">
+          <img src="/Portifolio2/assets/jogodavelha.png" alt="project2">
+           <div class="layer">
+            <h2>Jogo da Velha</h2>
+            <p>Jogo da Velha desenvolvido em: Html, Css e Javascript. </p>
+            <a href="https://github.com/nandatls/JogodaVelha"><i class="fa fa-external-link"></i></a>
+          </div> 
+        </div>
+        <!-- slide3 -->
+        <div class="swiper-slide project">
+          <img src="/Portifolio2/assets/conversormoeda.png" alt="project3">
+           <div class="layer">
+            <h2>Conversor de Moedas</h2>
+            <p>Aplicativo Conversor de Moedas para Android desenvolvido em: Html, Css, Javascript e React Native. </p>
+            <a href="https://github.com/nandatls/ConversordeMoedas"><i class="fa fa-external-link"></i></a>
+          </div> 
+        </div>
+        <!-- slide4 -->
+         <div class="swiper-slide project">
+          <img src="/Portifolio2/assets/buscadordecep.png" alt="project4">
+           <div class="layer">
+            <h2>Buscador de Cep</h2>
+            <p>Aplicativo Buscador de Cep desenvolvido em React Native.</p>
+            <a href="https://github.com/nandatls/BuscadordeCep"><i class="fa fa-external-link"></i></a>
+          </div> 
+        </div> 
+    </div> 
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>      
+<!-- fim carrossel swiper -->
+    </section>
+    <!-- Secao Contato -->
+    <section id="contact">
+      <div class="section-title">
+        <h2 class="sub-title">Contato</h2>       
+      </div>
+      <div class="content" >
+        <div class="contact-left" >
+          <form action="https://formsubmit.co/nandatls@gmail.com"
+          method="POST" id="contact-form">           
+            <input type="text" name="name" id="name" placeholder="Seu Nome" required/>
+            <input type="email" name="email" id="email" placeholder="Seu Email" required/>
+            <textarea name="message" id="message" rows="6" placeholder="Sua Mensagem" required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/Portifolio2/index.html">           
+            <button type="submit">Enviar Mensagem <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+        <div class="vl"></div>
+        <div class="contact-right">
+          <div class="col phone">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div class="info">
+              <h2 class="title">Telefone</h2>
+              <a href="https://api.whatsapp.com/send?phone=5521983727171" method="get" target="_blank">21 983727171</a>
+            </div>
+          </div>
+          <div class="col email">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="info">
+              <h2 class="title">Email</h2>
+              <p>nandatls@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="copyright">
+        Desenvolvido por Fernanda Maia &copy; 2023  <a href="#"><i class="fa-solid fa-house"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+  <!-- adicionando teste envio de email -->
+   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  formbutton("create", {
+    action: "https://formspree.io/f/myyqbyvq",
+    title: "Contato",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "nome@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        required: true,
+        name: "message",
+        placeholder: "Digite sua Mensagem",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script> 
+  <!-- fim teste -->
+  <!-- Swiper Js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: false,
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+  </script>  
+</body>
+</html>

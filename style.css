@@ -1,0 +1,503 @@
+/* Importando Fontes Google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@300&display=swap");
+
+/* CSS Geral*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+}
+/* Customizando CSS */
+.container {
+  background: #fff;
+  color: #120f2d;
+}
+/* Secao Header */
+#header .header-top {
+  width: 100%;
+  background-color: #0d0d1b;
+  padding: 8px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 69;
+}
+.header-top .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+.header-top .logo a span {
+  color: #faca22;
+}
+.nav-menu ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+}
+.nav-menu ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #faca22;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s;
+}
+.nav-menu ul li a:hover::after {
+  width: 100%;
+}
+.nav-menu .fa-solid {
+  display: none;
+}
+#header .header-bottom {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0b0d19),
+    url(/Portifolio2/assets/user-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 8% 6% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-bottom .bottom-left .name {
+  font-size: 46px;
+}
+.bottom-left .name span {
+  color: #faca22;
+}
+.bottom-left .profession {
+  font-size: 22px;
+  font-weight: 500;
+}
+.bottom-left .short-desc {
+  font-size: 18px;
+  padding: 20px 35% 20px 0;
+  text-align: justify;
+}
+.bottom-left .btn-cv {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #faca22;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.bottom-left .btn-cv:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+.header-bottom .bottom-right a {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #f7f7f7;
+  padding: 6px 10px;
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+.header-bottom .bottom-right a:hover {
+  border: 1px solid #faca22;
+  color: #faca22;
+  transform: scale(1.1);
+}
+/* Secao Sobre Mim */
+#about {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 6%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#about .about-left {
+  flex-basis: 36%;
+}
+#about .about-right {
+  flex-basis: 60%;
+}
+.about-left img {
+  width: 100%;
+  border-radius: 15px;
+}
+.section-title .sub-title {
+  font-size: 40px;
+  color: #d9dae7;
+  font-weight: 600;
+}
+.section-title .title {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 400;
+}
+.about-right .desc {
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 30px 0;
+  text-align: justify;
+}
+.about-right .tab-titles {
+  display: flex;
+  margin: 20px 0 30px;
+}
+.tab-titles .tab-links {
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-titles .tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ffc800;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: all 0.5s;
+}
+.tab-titles .tab-links.active-link::after {
+  width: 50%;
+}
+.about-right .tab-contents ul li {
+  list-style: none;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #ffc800;
+  font-size: 16px;
+  font-weight: 500;
+}
+.about-right .tab-contents {
+  display: none;
+}
+.about-right .tab-contents.active-tab {
+  display: block;
+}
+/* Secao Skills*/
+#skills {
+  background-image: linear-gradient(
+    320deg,
+    #010007 0,
+    #041c34 50%,
+    #041c34 100%
+  );
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 6%;
+  display: grid;
+  align-items: center;
+}
+#skills .sub-title {
+  text-align: center;
+}
+.skills-title {
+  text-align: start;
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-color: #fff;
+  background-color: #e9c12f;
+  padding: 1rem 2rem;
+  border-style: solid;
+  border-width: 0.2rem;
+}
+.skills-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.skills-content {
+  padding: 60px 8% 40px;
+  margin: 25px;
+}
+.skills-info,
+.skills-data,
+.skills-blob {
+  display: grid;
+}
+.skills-info {
+  grid-template-columns: repeat(4, 4fr);
+  gap: 2.5rem 2rem;
+}
+.skills-data {
+  justify-content: center;
+  place-items: center;
+}
+.skills-blob {
+  width: 80px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+.skills-blob img {
+  width: 40px;
+}
+.skills-name {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+.skills-subtitle {
+  font-size: 0.625rem;
+  color: #ffffff;
+}
+
+.skills-blob:hover img {
+  animation: bounce-skills 0.6s;
+}
+@keyframes bounce-skills {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translate(0);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translate(0);
+  }
+}
+/* Portifolio Section */
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 6%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .project {
+  display: grid; 
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 50px;
+  padding: 30px;
+  width: 100%;
+  height: 350px;
+}
+#portfolio .section-title .sub-title {
+  text-align: center;
+}
+.project img {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.5s;
+}
+.project:hover img {
+  transform: scale(1.1);
+}
+.project .layer {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(255, 238, 1, 0.952), rgba(255, 254, 252, 0.877)); 
+  border-radius: 10px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100 0 100 0;
+  transition: all 0.5s;
+}
+.project:hover .layer {
+  height: 100%;
+}
+.project .layer h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.project .layer p {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 1.25rem 0 1.875rem;
+}
+.project .layer a {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #faca22;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.project .layer a:hover {
+  background: #faca22;
+  color: #fff;
+  border: 2px solid #fff;
+}
+/* Swiper do Portfolio */
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+
+   
+  /* justify-content: center;
+  align-items: center; */
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+}
+.swiper-wrapper .swiper-slide {
+  margin-top: 40px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Secao Contato */
+#contact {
+  background-image: linear-gradient(
+    320deg,
+    #010007 0,
+    #041c34 50%,
+    #041c34 100%
+  );
+  padding: 60px 8% 40px;
+  text-align: center;
+  color: #f7f7f7;
+  display: grid;
+}
+#contact-form input:hover {
+  background: #faca22;
+}
+#contact-form textarea:hover {
+  background: #faca22;
+}
+#contact-form button:hover {
+  background: #faca22;
+}
+#contact .section-title .sub-title {
+  color: #fff;
+}
+#contact .content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.content .contact-left,
+.content .contact-right {
+  flex-basis: 50%;
+}
+.content .contact-left form {
+  width: 100%;
+}
+.contact-left form input,
+.contact-left form textarea,
+.contact-left form button {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #f7f7f7;
+  resize: none;
+  font-size: 14px;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+.contact-left form button {
+  background: #f7f7f7;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+.content .vl {
+  border-left: 2px solid #fff;
+  height: 300px;
+}
+.content .contact-right {
+  text-align: left;
+  color: #fff;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.content .contact-right a {
+  color: #fff;
+  text-decoration: none;
+}
+.content .contact-right a:hover {
+  color: #faca22;
+  font-size: 20px;
+}
+.contact-right .col {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.contact-right .col i {
+  font-size: 28px;
+  margin-right: 10px;
+}
+.col .info .title {
+  font-size: 20px;
+}
+.copyright {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 60px;
+}
+.copyright a {
+  text-decoration: none;
+  color: #fff;
+}
+.copyright a:hover {
+  color: #faca22;
+}
